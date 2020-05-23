@@ -43,7 +43,9 @@ welcome ;; This just returns the function that you created
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defn
   welcome-name
-  [name]
-  (println "Hello" name "!" "Welcome to the Clojure world!!!"))
+  ([] (welcome-name "nobody"))
+  ([name] (println "Hello" name "!" "Welcome to the Clojure world!!!")))
 
 (welcome-name "programmers")
+(welcome-name)
+

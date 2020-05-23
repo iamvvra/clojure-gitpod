@@ -8,6 +8,7 @@
 (nth '(1 2 3 4) 1)
 
 ;; Both behaves the same way, what's the difference?
+;; The second example is a quoted operator that delays evaluating the list as 1 is not fn
 
 ;; Add an element to the vector
 (conj [1 2 3 4] 5)
@@ -24,9 +25,11 @@
 (let [a-vec [1 2 3 4]
       dropped (drop 2 a-vec)]
   (println a-vec)
-  (println dropped))
+  (println dropped)
+  (println a-vec))
 
 
 
 ;; drop indeed drops elements. conj indeed add elements.
 ;; Then what does even immutability means?
+;; the underlying data is not modified but the value returned is

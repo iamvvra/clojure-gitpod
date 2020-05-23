@@ -57,8 +57,8 @@
 
 ;; Conditionals if-else
 (if (> 3 1);; Condition
-  3 ;; True branch
-  1) ;; False branch
+  :three ;; True branch
+  :one) ;; False branch
 
 ;; Nested expressions
 ;; Each nested expression evaluates to its value and

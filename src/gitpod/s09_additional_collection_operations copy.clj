@@ -30,6 +30,9 @@
 
 (reduce reducer-fn 1 [2 3 4])
 
+(reduce * 1 '(1 2))
+(reduce conj #{5} '(1 2 3))
+
 
 (reducer-fn 1 2)
 (reducer-fn 2 3)

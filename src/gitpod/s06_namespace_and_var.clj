@@ -10,7 +10,6 @@
   (print sum))
 
 ;; Throws error as sum is not available outside of the let scope
-sum
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
